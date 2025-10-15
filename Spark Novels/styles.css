@@ -134,6 +134,11 @@ body {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.novel-cover:hover{
+  transform: scale(1.1);
 }
 
 .novel-cover img {
@@ -513,9 +518,7 @@ body {
 .desktop{
   display: none;
 }
-/* =======================================
-   MEDIA QUERIES
-======================================= */
+/* ==================== MEDIA QUERIES ============================*/
 
 /* Small Phones (max 390px) */
 @media (max-width: 390px) {
