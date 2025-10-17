@@ -93,6 +93,7 @@ if (darkToggle && chapterContainer) {
   }
 }
 
+// ====== Dark Mode Toggle for Entire Container ======
 if (darkToggle && container) {
   darkToggle.addEventListener("click", () => {
     container.classList.toggle("dark-mode");
@@ -111,4 +112,15 @@ if (darkToggle && container) {
   if (savedTheme === "dark") {
     container.classList.add("dark-mode");
   }
+}
+
+// ====== Mobile Hamburger Toggle ======
+const hamburger = document.querySelector(".hamburger");
+const mobileHeader = document.querySelector(".header.mobile");
+
+if (hamburger && mobileHeader) {
+  hamburger.addEventListener("click", () => {
+    mobileHeader.classList.toggle("active");
+    hamburger.classList.toggle("active");
+  });
 }
