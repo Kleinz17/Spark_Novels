@@ -83,7 +83,7 @@ body {
 /* FEATURED & RECENTLY ADDED SECTIONS */
 .featured-novels,
 .recently-added {
-  width: auto;
+  width: 100%;
   background-color: #fff5ba;
   border: 1px solid black;
   padding: 20px;
@@ -358,6 +358,15 @@ body {
   border-top: 1px solid black;
   width: 70%;
   margin: 30px auto;
+}
+
+.video{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  margin: 0 auto;
+  height: 500px;
+  width: 70%;
 }
 
 .about-contact {
@@ -777,6 +786,7 @@ body {
   .about-contact{
     margin: 0 auto;
     max-width: 90%;
+    padding: 20px 140px;
   }
 
   .submit-form-section {
