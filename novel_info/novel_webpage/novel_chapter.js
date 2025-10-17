@@ -12,7 +12,7 @@ async function loadChapter() {
   }
 
   try {
-    // Fetch JSON file (same as novel_page.js)
+    // Fetch JSON file
     const res = await fetch(`../novel_json/${novelId}.json`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const novel = await res.json();
